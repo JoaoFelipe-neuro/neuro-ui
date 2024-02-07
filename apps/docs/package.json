@@ -8,24 +8,26 @@
     "build": "storybook build --docs",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules",
-    "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
+    "lint": "eslint ./stories/*.stories.tsx --max-warnings 0",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@neuro-ui/ui": "workspace:*",
+    "polished": "^4.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "polished": "^4.3.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@neuro-ui/eslint-config": "workspace:*",
-    "@neuro-ui/typescript-config": "workspace:*",
     "@neuro-ui/tokens": "workspace:*",
+    "@neuro-ui/typescript-config": "workspace:*",
     "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-docs": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
     "@storybook/react": "^7.6.7",
     "@storybook/react-vite": "^7.6.7",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.56.0",
     "serve": "^14.2.1",
