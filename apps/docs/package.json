@@ -1,5 +1,5 @@
 {
-  "name": "@repo/docs",
+  "name": "@neuro-ui/docs",
   "version": "0.0.0",
   "type": "module",
   "private": true,
@@ -11,12 +11,15 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
+    "@neuro-ui/ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "polished": "^4.3.1"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@neuro-ui/eslint-config": "workspace:*",
+    "@neuro-ui/typescript-config": "workspace:*",
+    "@neuro-ui/tokens": "workspace:*",
     "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-docs": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.7",
@@ -27,7 +30,6 @@
     "eslint": "^8.56.0",
     "serve": "^14.2.1",
     "storybook": "^7.6.7",
-    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
   }
