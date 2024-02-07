@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from "@storybook/react";
-
-import { Button, ButtonProps } from "@neuro-ui/ui";
+import type { ButtonProps } from "@neuro-ui/ui";
+import { Button } from "@neuro-ui/ui";
 
 export default {
   title: "Form/Button",
